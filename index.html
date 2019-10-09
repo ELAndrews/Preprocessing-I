@@ -3,17 +3,99 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
-
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <div class="dropdown">
+      <button class="dropdownBtn"><i class="fa fa-bars fa-2x"></i></button>
+        <div class="dropdownContent">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="topContent">
+    <div class="profile">
+      <img class="profileImg" src="https://media.licdn.com/dms/image/C5603AQGRcJeUPIxSEQ/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=ZYbwPn_oyLf9_jqhDl7yPtYVLAuOJQSTa-3r8UG_HdM" alt="Wallace Wallace">
+      <div class="profileText">
+        <h1>Wallace</h1>
+        <p>Life Science Associate<br /> with M Ventures</p>
+        <a href="#">Let's Collaborate</a>
+      </div>
+    </div>
+  </section>
+  <section class="middle">
+    <article class="intro">
+      <h2>Intro</h2>
+      <p>Experienced financial services professional with roles in venture capital and consulting. Skilled in the evaluation of life sciences investments with a keen interest in synthetic biology. Academic background in genetics and biotech.</p>
+    </article>
+    <article class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>DNA Extraction</li>
+        <li>Financial Analysis</li>
+        <li>Molecular Biology</li>
+        <li>Genomics & Genetics</li>
+        <li>DNA Sequencing</li>
+        <li>Management Consulting</li>
+        <li>Strategy Consulting</li>
+        <li>Biochemistry</li>
+      </ul>
+    </article>
+  </section>
+  <section class="bottom">
+    <article class="workEx">
+      <h3>Work Experience</h3>
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>Company</th>
+          <th>Period</th>
+        </tr>
+        <tr>
+          <th>Life Science Accociate</th>
+          <th>M Ventures</th>
+          <th>Nov 2018 - Present</th>
+        </tr>
+        <tr>
+          <th>MPhil Industry Guest Lecturer</th>
+          <th>University of Cambridge</th>
+          <th>Oct 2018 - Present</th>
+        </tr>
+        <tr>
+          <th>Women as Future Leaders - Inspire</th>
+          <th>McKinsey & Company</th>
+          <th>Sept 2018</th>
+        </tr>
+        <tr>
+          <th>Foresight & Scounting</th>
+          <th>Merck KGaA</th>
+          <th>Mar 2018 - Jun 2018</th>
+        </tr>
+        <tr>
+            <th>Business Development Consultant</th>
+            <th>New Path Molecular Research</th>
+            <th>Jan 2018 - Mar 2018</th>
+          </tr>
+      </table>
+    </article>
+  </section>
+  <footer>
+      <h3>Contact</h3>
+      <p><i class="fa fa-phone"></i>           07860800291</p> 
+      <p><i class="fa fa-envelope"></i>           FakeEmail@Thisisntreal.com</p> 
+      <a href="https://www.linkedin.com/in/mxlwallace/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://twitter.com/MxLWallace"><i class="fa fa-twitter"></i></a>
+  </footer>
 </body>
 </html>
