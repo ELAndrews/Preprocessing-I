@@ -9,7 +9,7 @@
 
 // // Variables 
 
-@mobileView: 500px;
+@mobileView: 700px;
 
 // 	//Colors
 @primaryColor: #0f1626;
@@ -27,7 +27,6 @@
 	background-color: @primaryColor;
 	border: 3px solid @neutralColor;
 }
-
 
 
 /* Set every element's box-sizing to border-box */
@@ -89,6 +88,7 @@ header{
 				.border();
 				padding: 8px;
 				z-index: 0;
+				visibility: hidden;
 
 				a{
 					text-decoration: none;
@@ -110,7 +110,10 @@ header{
 					justify-content: space-evenly;
 				}
 			}
-			
+
+			.dropdownBtn:hover  ~.dropdownContent{
+						visibility: visible;
+				}
 
 		}
 	}

@@ -78,13 +78,14 @@ header nav .dropdown .dropdownContent {
   border: 3px solid #F5F5F5;
   padding: 8px;
   z-index: 0;
+  visibility: hidden;
 }
 header nav .dropdown .dropdownContent a {
   text-decoration: none;
   color: #F5F5F5;
   padding: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   header nav .dropdown .dropdownContent a {
     padding: 20px;
   }
@@ -92,14 +93,17 @@ header nav .dropdown .dropdownContent a {
 header nav .dropdown .dropdownContent a:hover {
   color: #FF533D;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   header nav .dropdown .dropdownContent {
     flex-direction: row;
     width: 80vw;
     justify-content: space-evenly;
   }
 }
-@media (max-width: 500px) {
+header nav .dropdown .dropdownBtn:hover ~ .dropdownContent {
+  visibility: visible;
+}
+@media (max-width: 700px) {
   header {
     height: 200px;
   }
@@ -131,7 +135,7 @@ header nav .dropdown .dropdownContent a:hover {
   color: #F5F5F5;
   border-radius: 8px;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .topContent .profile {
     flex-direction: column;
     padding: 20px 20px 40px 20px;
@@ -150,14 +154,14 @@ header nav .dropdown .dropdownContent a:hover {
   padding: 35px;
   line-height: 1.6;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .middle .intro,
   .middle .skills {
     width: 100%;
     padding: 45px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .middle {
     flex-direction: column;
   }
