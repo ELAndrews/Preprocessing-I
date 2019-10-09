@@ -5,27 +5,32 @@
   <meta charset="utf-8">
 
   <title>My Resume</title>
-
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
-  </nav>
+  <header>
+    <nav>
+      <div class="dropdown">
+      <button class="dropdownBtn"><i class="fas fa-bars"></i></button>
+        <div class="dropdownContent">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
   <section class="topContent">
     <div class="profile">
       <img class="profileImg" src="https://media.licdn.com/dms/image/C5603AQGRcJeUPIxSEQ/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=ZYbwPn_oyLf9_jqhDl7yPtYVLAuOJQSTa-3r8UG_HdM" alt="Wallace Wallace">
-      <h1>Emma Andrews</h1>
-      <p>Student Full-Stack Web Developer</p>
-      <a href="#">Let's Collaborate</a>
+      <div class="profileText">
+        <h1>Emma Andrews</h1>
+        <p>Student Full-Stack Web Developer</p>
+        <a href="#">Let's Collaborate</a>
+      </div>
     </div>
   </section>
   <section class="middle">
@@ -77,5 +82,8 @@
       </table>
     </article>
   </section>
+  <footer>
+      <img src="https://github.com/ELAndrews/portfolio-website/blob/emma-andrews/Emma-Andrews.png?raw=true" alt="Emma Andrews">
+  </footer>
 </body>
 </html>

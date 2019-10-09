@@ -4,49 +4,22 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vast+Shadow&display=swap');
+
+// // Variables 
+
+// 	//Colors
+@primaryColor: #0f1626;
+@secondColor: #AB987A;
+@accentColor: #FF533D;
+@neutralColor: #F5F5F5;
+
+// 	//Fonts
+@primaryFont: 'Quattrocento Sans';
+@accentFont: 'Vast Shadow', cursive;
+
+//Mixins 
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -55,5 +28,130 @@ table {
 
 html, body {
 	height: 100%;
+	font-family: @primaryFont;
+	background-color: @neutralColor;
+	color: @neutralColor;
 }
 
+h1, h2, h3 {
+	font-family: @accentFont;
+}
+
+header{
+	height: 100px;
+	background-color: @primaryColor;
+	border: 3px solid @neutralColor;
+	border-bottom: none;
+	nav {
+		height: 80px;
+		align-items: center;
+		text-align: right;
+		position: relative;
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+
+			button{
+				height: 40px;
+				width: 40px;
+				background-color: @secondColor;
+				margin: 20px;
+			}
+			
+			.dropdownContent {
+				display: none;
+				position: absolute;
+				background-color: @accentColor;
+				min-width: 200px;
+				z-index: 1;
+
+				a{
+					text-decoration: none;
+					color: @neutralColor;
+				}
+
+				a:hover {
+					color: @accentColor;
+				}
+			}
+
+			.dropdown:hover {
+				.dropdown-content{
+					display: block;
+				}
+
+				button {
+					background-color: @neutralColor;
+				}
+			}
+
+		}
+	}
+}
+
+
+.topContent{
+	background-color: @primaryColor;
+	border: 3px solid @neutralColor;
+	border-top: none;
+
+	.profile{
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+
+		.profileImg{
+			border: 2px solid @neutralColor;
+			border-radius: 50%;
+			margin: auto;
+			position: relative;
+			bottom: 50px;
+		}
+
+		.profileText{
+			margin: auto;
+
+			a{
+				text-decoration: none;
+				background-color: @secondColor;
+				padding: 8px;
+				color: @neutralColor;
+				border-radius: 8px;
+
+			}
+		}
+	}
+}
+
+.middle {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+
+	.intro, .skills{
+		background-color: @primaryColor;
+		border: 3px solid @neutralColor;
+		width: calc(50%);
+		padding:35px;
+		line-height: 1.6;
+	}
+}
+
+.bottom {
+	background-color: @primaryColor;
+	border: 3px solid @neutralColor;
+	padding:35px;
+	line-height: 1.8;
+
+	table {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+footer {
+	background-color: @primaryColor;
+	border: 3px solid @neutralColor;
+	text-align: right;
+}

@@ -2,129 +2,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Quattrocento Sans'), local('QuattrocentoSans'), url(https://fonts.gstatic.com/s/quattrocentosans/v12/va9c4lja2NVIDdIAAoMR5MfuElaRB0zJt0o.ttf) format('truetype');
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+@font-face {
+  font-family: 'Vast Shadow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Vast Shadow Regular'), local('VastShadow-Regular'), url(https://fonts.gstatic.com/s/vastshadow/v9/pe0qMImKOZ1V62ZwbVY9dce9I94.ttf) format('truetype');
 }
 /* Set every element's box-sizing to border-box */
 * {
@@ -133,4 +23,109 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Quattrocento Sans';
+  background-color: #F5F5F5;
+  color: #F5F5F5;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Vast Shadow', cursive;
+}
+header {
+  height: 100px;
+  background-color: #0f1626;
+  border: 3px solid #F5F5F5;
+  border-bottom: none;
+}
+header nav {
+  height: 80px;
+  align-items: center;
+  text-align: right;
+  position: relative;
+}
+header nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header nav .dropdown button {
+  height: 40px;
+  width: 40px;
+  background-color: #AB987A;
+  margin: 20px;
+}
+header nav .dropdown .dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #FF533D;
+  min-width: 200px;
+  z-index: 1;
+}
+header nav .dropdown .dropdownContent a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+header nav .dropdown .dropdownContent a:hover {
+  color: #FF533D;
+}
+header nav .dropdown .dropdown:hover .dropdown-content {
+  display: block;
+}
+header nav .dropdown .dropdown:hover button {
+  background-color: #F5F5F5;
+}
+.topContent {
+  background-color: #0f1626;
+  border: 3px solid #F5F5F5;
+  border-top: none;
+}
+.topContent .profile {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.topContent .profile .profileImg {
+  border: 2px solid #F5F5F5;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  bottom: 50px;
+}
+.topContent .profile .profileText {
+  margin: auto;
+}
+.topContent .profile .profileText a {
+  text-decoration: none;
+  background-color: #AB987A;
+  padding: 8px;
+  color: #F5F5F5;
+  border-radius: 8px;
+}
+.middle {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.middle .intro,
+.middle .skills {
+  background-color: #0f1626;
+  border: 3px solid #F5F5F5;
+  width: calc(50%);
+  padding: 35px;
+  line-height: 1.6;
+}
+.bottom {
+  background-color: #0f1626;
+  border: 3px solid #F5F5F5;
+  padding: 35px;
+  line-height: 1.8;
+}
+.bottom table {
+  width: 90%;
+  margin: auto;
+}
+footer {
+  background-color: #0f1626;
+  border: 3px solid #F5F5F5;
+  text-align: right;
 }
