@@ -9,7 +9,7 @@
 
 // // Variables 
 
-@mobileView: 700px;
+@mobileView: 500px;
 
 // 	//Colors
 @primaryColor: #0f1626;
@@ -185,9 +185,17 @@ header{
 	line-height: 1.8;
 
 	table {
-		width: 90%;
+		width: 95%;
 		margin: auto;
 		text-align: left;
+
+		th, td {
+			padding: 5px;
+		}
+
+		tr:nth-child(even){
+			background-color: #2F3A57;
+		}
 	}
 }
 

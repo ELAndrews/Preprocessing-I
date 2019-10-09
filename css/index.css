@@ -84,7 +84,7 @@ header nav .dropdown .dropdownContent a {
   color: #F5F5F5;
   padding: 10px;
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   header nav .dropdown .dropdownContent a {
     padding: 20px;
   }
@@ -92,14 +92,14 @@ header nav .dropdown .dropdownContent a {
 header nav .dropdown .dropdownContent a:hover {
   color: #FF533D;
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   header nav .dropdown .dropdownContent {
     flex-direction: row;
     width: 80vw;
     justify-content: space-evenly;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   header {
     height: 200px;
   }
@@ -131,7 +131,7 @@ header nav .dropdown .dropdownContent a:hover {
   color: #F5F5F5;
   border-radius: 8px;
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .topContent .profile {
     flex-direction: column;
     padding: 20px 20px 40px 20px;
@@ -150,14 +150,14 @@ header nav .dropdown .dropdownContent a:hover {
   padding: 35px;
   line-height: 1.6;
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .middle .intro,
   .middle .skills {
     width: 100%;
     padding: 45px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .middle {
     flex-direction: column;
   }
@@ -169,9 +169,16 @@ header nav .dropdown .dropdownContent a:hover {
   line-height: 1.8;
 }
 .bottom table {
-  width: 90%;
+  width: 95%;
   margin: auto;
   text-align: left;
+}
+.bottom table th,
+.bottom table td {
+  padding: 5px;
+}
+.bottom table tr:nth-child(even) {
+  background-color: #2F3A57;
 }
 footer {
   background-color: #0f1626;
