@@ -16,6 +16,10 @@
   font-display: swap;
   src: local('Vast Shadow Regular'), local('VastShadow-Regular'), url(https://fonts.gstatic.com/s/vastshadow/v9/pe0qMImKOZ1V62ZwbVY9dce9I94.ttf) format('truetype');
 }
+.border {
+  background-color: #0f1626;
+  border: 3px solid #F5F5F5;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -46,33 +50,38 @@ header nav {
 }
 header nav .dropdown {
   position: relative;
-  display: inline-block;
 }
-header nav .dropdown button {
-  height: 40px;
-  width: 40px;
+header nav .dropdown .dropdownBtn {
+  padding: 10px 15px;
+  border: 1px solid #F5F5F5;
   background-color: #AB987A;
   margin: 20px;
+  color: #F5F5F5;
+  transform: rotate(-90deg);
+  position: relative;
+  top: 30px;
+  text-decoration: none;
+  z-index: 1;
 }
 header nav .dropdown .dropdownContent {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  background-color: #FF533D;
-  min-width: 200px;
-  z-index: 1;
+  right: 35px;
+  top: 35px;
+  text-align: center;
+  background-color: #0f1626;
+  border: 3px solid #F5F5F5;
+  padding: 10px;
+  z-index: 0;
 }
 header nav .dropdown .dropdownContent a {
   text-decoration: none;
   color: #F5F5F5;
+  padding: 10px;
 }
 header nav .dropdown .dropdownContent a:hover {
   color: #FF533D;
-}
-header nav .dropdown .dropdown:hover .dropdown-content {
-  display: block;
-}
-header nav .dropdown .dropdown:hover button {
-  background-color: #F5F5F5;
 }
 .topContent {
   background-color: #0f1626;
